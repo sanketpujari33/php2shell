@@ -24,6 +24,8 @@ CVEs   : CVE-2026-109618  ·  CVE-2026-109619
   Standalone - auto-installs requirements, no setup needed.
 """
 
+import utils.transport
+import utils.session
 import importlib, subprocess, sys, os
 
 _DEPS = [("requests", "requests>=2.28.0"), ("urllib3", "urllib3>=1.26.0")]
